@@ -1,0 +1,65 @@
+@font-face{
+    font-family: 'HomepageBaukasten-Bold';
+    font-weight: bold;
+    src: url("/Users/mathieuhalpin/Desktop/fonts/homepage/HomepageBaukasten-Bold.otf") format("opentype");
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Whitney-Book';
+    font-weight: normal;
+    src: url("/Users/mathieuhalpin/Desktop/fonts/whitney/Whitney-Book-Font.otf") format("opentype");
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Montserrat Semi-Bold';
+    font-weight: semi-bold;
+    src: url("/Users/mathieuhalpin/Desktop/fonts/montserrat/Montserrat-SemiBold.otf") format("opentype");
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Gothic A1';
+    font-weight: normal;
+    src: url("/Users/mathieuhalpin/Desktop/fonts/Gothic_A1/GothicA1-Regular.ttf");
+    font-style: normal;
+}
+
+h1 {
+    color: whitesmoke;
+    font-family: HomepageBaukasten-Bold;
+    border-bottom: 10px solid #FFEF00;
+    font-size: 64px;
+}
+
+h2{
+    color: whitesmoke;
+    font-family: Montserrat-SemiBold;
+    font-size: 48px;
+}
+
+h3{
+    color: whitesmoke;
+    font-family: GothicA1-Regular;
+    border-bottom: 5px solid #D9D9D9;
+    font-size: 48px;
+}
+
+h4{
+    color:whitesmoke;
+    font-family: Whitney-Book;
+    font-size: 36px;
+}
+
+h5{
+    color: whitesmoke;
+    font-family: Whitney-Book;
+    font-size: 24px;
+}
+
+h6{
+    color: whitesmoke;
+    font-family: Whitney-Book;
+    font-size: 18px;
+}
