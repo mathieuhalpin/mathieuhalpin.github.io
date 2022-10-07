@@ -1,28 +1,28 @@
 @font-face{
     font-family: 'HomepageBaukasten-Bold';
     font-weight: bold;
-    src: url("/Users/mathieuhalpin/Desktop/fonts/homepage/HomepageBaukasten-Bold.otf") format("opentype");
+    src: url("../fonts/HomepageBaukasten-Bold.otf") format("opentype");
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Whitney-Book';
     font-weight: normal;
-    src: url("/Users/mathieuhalpin/Desktop/fonts/whitney/Whitney-Book-Font.otf") format("opentype");
+    src: url("../fonts/Whitney-Book-Font.otf") format("opentype");
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Montserrat Semi-Bold';
     font-weight: semi-bold;
-    src: url("/Users/mathieuhalpin/Desktop/fonts/montserrat/Montserrat-SemiBold.otf") format("opentype");
+    src: url("../fonts/Montserrat-SemiBold.otf") format("opentype");
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Gothic A1';
     font-weight: normal;
-    src: url("/Users/mathieuhalpin/Desktop/fonts/Gothic_A1/GothicA1-Regular.ttf");
+    src: url("../fonts/GothicA1-Regular.ttf");
     font-style: normal;
 }
 
