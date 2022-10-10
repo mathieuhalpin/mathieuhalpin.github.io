@@ -66,3 +66,15 @@ h6{
 body{
     background-color: #4F4F51;
 }
+a:link{
+    color: whitesmoke;
+}
+a:visited{
+    color: whitesmoke;
+}
+a:hover{
+    color: whitesmoke;
+}
+a:active{
+    color: #FFEF00;
+}
