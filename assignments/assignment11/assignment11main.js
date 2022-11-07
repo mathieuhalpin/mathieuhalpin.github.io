@@ -1,4 +1,4 @@
-const quoteButton = document.querySelector('.new-movie');
+const movieButton = document.querySelector('.new-movie');
 const end = 'https://ghibliapi.herokuapp.com/films/{id}';
 
 quoteButton.addEventListener('click', getMovie);
@@ -22,5 +22,5 @@ async function getMovie() {
 }
 
 function displayMovie(movie) {
-    document.getElementById("js-movie-text").textContent = quote;
+    document.getElementById("js-movie-text").textContent = movie;
 }
