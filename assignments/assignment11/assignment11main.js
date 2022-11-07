@@ -1,19 +1,19 @@
 const movieButton = document.querySelector('.new-movie');
 const end = 'https://ghibliapi.herokuapp.com/films/{id}';
 
-quoteButton.addEventListener('click', getMovie);
-window.addEventListener('reload', getMovie);
+quoteButton.addEventListener('click', getFilm);
+window.addEventListener('reload', getFilm);
 
-async function getMovie() {
+async function getFilm() {
     try {
-      console.log("getMovie works");
+      console.log("getFilm works");
       let text = await fetch(end);
       let respond = await text.text();
       let json_response = JSON.parse(respond);
       console.log(json_response);
       console.log(json_response["message"]);
   
-      displayMovie(json_response["message"]);
+      displayFilm(json_response["message"]);
     } 
     catch (err) {
       console.log(err);
@@ -21,6 +21,6 @@ async function getMovie() {
     }
 }
 
-function displayMovie(movie) {
-    document.getElementById("js-movie-text").textContent = movie;
+function displayFilm(film) {
+    document.getElementById("js-movie-text").textContent = film;
 }
