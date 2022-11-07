@@ -1,7 +1,7 @@
 const movieButton = document.querySelector('.new-movie');
 const end = 'https://ghibliapi.herokuapp.com/films/{id}';
 
-quoteButton.addEventListener('click', getFilm);
+movieButton.addEventListener('click', getFilm);
 window.addEventListener('reload', getFilm);
 
 async function getFilm() {
