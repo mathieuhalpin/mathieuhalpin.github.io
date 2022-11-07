@@ -16,7 +16,7 @@ async function getFilm() {
 
     console.log(randomFilm.title);
 
-    displayFilm(randomFilm.title);
+    displayFilm(randomFilm);
   } 
   catch (err) {
     console.log(err);
@@ -25,5 +25,5 @@ async function getFilm() {
 }
 
 function displayFilm(film) {
-    document.getElementById("js-movie-text").textContent = film;
+  document.getElementById("js-movie-text").textContent = `${film.title}, ${film.release_date}, ${film.director}`;
 }
