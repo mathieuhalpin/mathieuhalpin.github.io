@@ -67,6 +67,7 @@ body::before {
 }
 h1 {
 font-family: HomepageBaukasten-Bold;
+color: whitesmoke;
 font-size: 64px;
 margin:0
 }
