@@ -21,6 +21,6 @@ async function getMovie() {
     }
 }
 
-function displayQuote(movie) {
+function displayMovie(movie) {
     document.getElementById("js-movie-text").textContent = quote;
 }
