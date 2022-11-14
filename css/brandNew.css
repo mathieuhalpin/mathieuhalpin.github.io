@@ -1,0 +1,90 @@
+@font-face{
+    font-family: 'Gothic A1';
+    font-weight: normal;
+    src: url("../fonts/GothicA1-Regular.ttf");
+    font-style: normal;
+}
+@font-face{
+    font-family: 'HomepageBaukasten-Bold';
+    font-weight: bold;
+    src: url("../fonts/HomepageBaukasten-Bold.otf") format("opentype");
+    font-style: normal;
+}
+
+body,
+html,
+main {
+ background:#4F4F51;
+ color:#f3ffb8;
+ margin:0;
+ padding:0;
+ font-family:monospace;
+ font-size:14px;
+ width:100%;
+ height:100%;
+ overflow:hidden;
+ line-height:1.25
+}
+main {
+ filter: blur(0.025rem);
+ text-shadow:0 0 1px whitesmoke, -1px 0 1px #f01, 1px 0 1px #10f;
+ padding:1ch;
+ overflow:auto;
+ display:block
+}
+pre {
+ line-height:1
+}
+@keyframes scroll {
+ from {
+  transform:translateY(0px)
+ }
+ to {
+  transform:translateY(6px)
+ }
+}
+body::before {
+ background:repeating-linear-gradient(0deg, black, #f00 1px, whitesmoke 2px, #00f 3px);
+ position:fixed;
+ top:-6px;
+ left:0;
+ width:100%;
+ height:calc(100% + 6px);
+ content:"";
+ pointer-events:none;
+ mix-blend-mode:multiply;
+ opacity:0.3;
+ z-index:100;
+ animation-name:scroll;
+ animation-iteration-count:infinite;
+ animation-duration:2s;
+ animation-timing-function:linear;
+ will-change:transform;
+ transform:translateY(0px)
+}
+* {
+ box-sizing:border-box
+}
+h1 {
+font-family: HomepageBaukasten-Bold;
+color: whitesmoke;
+font-size: 64px;
+margin:0
+}
+h2 {
+    color: whitesmoke;
+    font-family: Whitney-Book;
+    font-size: 24px;
+    margin: 0
+}
+a {
+    color:inherit
+   }
+   ::selection {
+    background:#f3ffb8cc;
+    color:#1c1d1b
+   }
+   .border {
+    border:2px solid #f3ffb8;
+    padding:1ch
+   }
