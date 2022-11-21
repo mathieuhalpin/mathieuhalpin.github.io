@@ -27,3 +27,5 @@ async function alicesTumbling() {
   await alice2.animate(aliceTumbling, aliceTiming).finished;
   await alice3.animate(aliceTumbling, aliceTiming).finished;
 }
+
+alicesTumbling();
