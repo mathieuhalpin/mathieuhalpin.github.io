@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>mathieu halpin | researcher, designer, thinker.</title>
+        <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
+        <style>
+            <!-- credit to aesthetic.css for the better CRT effect-->
+            .aesthetic-effect-crt {
+                display: inline-block;
+                position: relative;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #121010;
+              }
+              
+              .aesthetic-effect-crt::after {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: rgba(18, 16, 16, 0.1);
+                opacity: 0;
+                z-index: 2;
+                pointer-events: none;
+                animation: flicker 0.15s infinite;
+              }
+              
+              .aesthetic-effect-crt::before {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+                z-index: 2;
+                background-size: 100% 2px, 3px 100%;
+                pointer-events: none;
+              }
+        </style>
+    </head>
+
+    <body>
+        <div class="aesthetic-effect-crt">
+            <div class="container">
+                <aside class="sidenav">
+                    <div class="titlebar">
+                        <button aria-label="Close" class="close"></button>
+                        <h1 class="title">Navigation</h1>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="window-pane">
+                        <ul class="nav-items">
+                            <li>
+                                ::marker
+                                <a href="/index.html/#about">About Me</a>
+                            </li>
+                            <li>
+                                ::marker
+                                <a href="/index.html/#experience">Experience</a>
+                            </li>
+                            <li>
+                                ::marker
+                                <a href="/index.html/#interests">Interests</a>
+                            </li>
+                            <li>
+                                ::marker
+                                <a href="/index.html/#contact">Contact me!</a>
+                            </li>
+                            <li>
+                                ::marker
+                                <a href="/mattpaint.html">MattPaint</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <p class="heading center">MattPaint</p>
+                <p class="describe">
+                    A riff on classic MacPaint done in P5.js
+                </p>
+                <section class="mattpaint">
+                    <div class="window">
+                        <div class="title-bar">
+                            <button aria-label="Close" class="close"></button>
+                            <h1 class="title">MattPaint Clinet</h1>
+                        <button aria-label="Resize" class="resize"></button>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="window-pane">
+                            <script href="/sketch.js">
+                            </script>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
