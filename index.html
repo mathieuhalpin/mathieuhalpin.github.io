@@ -1,175 +1,259 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <title>mathieu halpin | researcher, designer, thinker.</title>
-        <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css">
-        <style>
-            <!-- credit to aesthetic.css for the better CRT effect-->
-            .aesthetic-effect-crt {
-                display: inline-block;
-                position: relative;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: #121010;
-              }
-              
-              .aesthetic-effect-crt::after {
-                content: " ";
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                background: rgba(18, 16, 16, 0.1);
-                opacity: 0;
-                z-index: 2;
-                pointer-events: none;
-                animation: flicker 0.15s infinite;
-              }
-              
-              .aesthetic-effect-crt::before {
-                content: " ";
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-                z-index: 2;
-                background-size: 100% 2px, 3px 100%;
-                pointer-events: none;
-              }
-        </style>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>mathieu halpin | researcher, designer, thinker.</title>
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
+    <style>
+      <!--credit to aesthetic.css for the better CRT effect--> 
+        .aesthetic-effect-crt {
+        display: inline-block;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #121010;
+      }
 
-    <body>
-            <div class="container">
-                <div class="layout">
-                    <p class="col col-main"> </p>
-                <aside class="window sidebar">
-                    <div class="title-bar">
-                        <button aria-label="Close" class="close"></button>
-                        <h1 class="title">Navigation</h1>
-                    </div>
-                    <div class="separator"></div>
-                    <div class="window-pane">
-                        <ul class="nav-items">
-                            <li>
-                                <a href="#aboutme">About Me</a>
-                            </li>
-                            <li>
-                                <a href="#experience">Experience</a>
-                            </li>
-                            <li>
-                                <a href="#interests">Interests</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact me!</a>
-                            </li>
-                            <li>
-                                <a href="/mattpaint.html">MattPaint</a>
-                            </li>
-                        </ul>
-                    </div>
-                </aside>
-                <p></p>
-                <p class="col col-complementary" role="complementary"> </p>
-                <div class="standard-dialog">
-                    <p class="heading center">Mathieu Halpin</p>
-                    <p class="desc center">
-                        Researcher | Designer | Thinker
-                    </p>
-                    <h2 class="section" id="aboutme">About Me</h2>
-                    <p>
-                        My name is Mathieu Halpin and I am a senior at the University of Colorado at Boulder, where I am studying Anthropology and minoring in the Creative Technology and Design program. I am on track to receive my BA in Anthropology in the coming months.
-                    </p>
-                    <p>
-                        I am interested in researching cultural criticism and mass media, and defining a creative practice with physical computing being my medium. In my research, I want to explore the ways that mass media influences our culture and the role that technology plays in shaping our understanding of the world. I am particularly interested in exploring the ways that physical computing can be used to create new forms of expression and communication.
-                    </p>
-                    <p>
-                        In my art, I strive to combine my passion for technology with my interest in cultural criticism to create thought-provoking and engaging works that challenge the viewer to think differently about the world around them. Whether I am using hardware, software, or a combination of both, my goal is to create art that inspires, educates, and entertains.
-                    </p>
-                    <h2 class="section" id="experience">Current Experience</h2>
-                    <section class="experience-list">
-                        <h3 class="subtitles" id="thinglab">Undergraduate Researcher, THING Lab</h3>
-                        <div style="padding-left: 20px;">
-                            <blockquote>
-                                Undergraduate researcher at the THING Lab within the ATLAS Institute. Supports the documentation and analysis of the TactorBots co-design study. Arranges the interview materials, identifies the inspiring finds, and provides reflections on the study results. Presents and discusses the findings with the research team. Supports the fabrication of the Shadow Lamp project for Arduino Cloud Game.
+      .aesthetic-effect-crt::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(18, 16, 16, 0.1);
+        opacity: 0;
+        z-index: 2;
+        pointer-events: none;
+        animation: flicker 0.15s infinite;
+      }
 
-Advisor: Dr. Daniel Leithinger, Mentor: Ran Zhou
-                            </blockquote>
-                        </div>
-                        <h3 class="subtitles" id="fellowship">Media Archiving and Preservation Fellow, University of Colorado Libraries</h3>
-                        <div style="padding-left: 20px;">
-                            <blockquote>
-                                Learning from the Libraries’ Moving Image Archivist to review, identify, and describe 8mm, Super 8, 16mm, and 35mm film and various formats of video tape from the archives’ collections and to prepare media for digitization and/or long-term preservation. Handling moving image film and related equipment, identifying various film and video formats and characteristics, organizing and describing media material according to archival standards, and employing best practices for preservation of film and video materials.
-                            </blockquote>
-                        </div>
-                        <h3 class="subtitles" id="cui">Head Opinions Section Editor, CU Independent</h3>
-                        <div style="padding-left: 20px;">
-                            <blockquote>
-                                Oversee the editing and operations of the opinion's section alongside the Assistant Opinions Editor of the CU Independent, the University of Colorado's largest student-run publication.
-                            </blockquote>
-                        </div>
-                    </section>
-                    <h2 class="section">Past Experience</h2>
-                    <section class="past-experience">
-                        <h3 class="subtitles" id="wndr">Creative Intern, WNDR Museum</h3>
-                        <div style="padding-left: 20px;">
-                            <blockquote>
-                                Supporting the museum's infrastructure, specifically looking into operational issues with technology. Assists in the installation of new exhibitions. Provides insight in weekly brainstorming meetings. Working with Arduino to create new insights on exhibitions.
-                            </blockquote>
-                        </div>
-                        <h3 class="subtitles" id="cedar">Research Intern, Community Engagement, Design, and Research Center</h3>
-                        <div style="padding-left: 20px;">
-                            <blockquote>
-                                Assisted on the projects within the CEDaR Center, namely putting together a survey for residents of Longmont, CO in regards to their usage of the downtown area post-COVID-19. Contributed to general CEDaR tasks.
+      .aesthetic-effect-crt::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(
+            rgba(18, 16, 16, 0) 50%,
+            rgba(0, 0, 0, 0.25) 50%
+          ),
+          linear-gradient(
+            90deg,
+            rgba(255, 0, 0, 0.06),
+            rgba(0, 255, 0, 0.02),
+            rgba(0, 0, 255, 0.06)
+          );
+        z-index: 2;
+        background-size: 100% 2px, 3px 100%;
+        pointer-events: none;
+      }
+    </style>
+  </head>
 
-Projects worked on:
-- Downtown Longmont Usage Survey
-                            </blockquote>
-                        </div>
-                    </section>
-                    <h2 class="section" id="interests">Interests</h2>
-                    <section class="interests">
-                        <p>
-                            One of my main interests is physical computing for art, which involves using technology to create interactive, physical systems that can sense and respond to the world around them. I find this field particularly fascinating because it allows artists to explore the intersection of technology and the physical world, and create new forms of expression that can engage and inspire audiences.
-                        </p>
-                        <p>
-                            Another area of interest for me is cultural criticism, which involves analyzing and evaluating the various cultural phenomena that shape our society. I find this field to be particularly relevant in today's world, where technology is increasingly shaping the way we think, act, and interact with each other.
-                        </p>
-                        <p>
-                            I am also interested in online communities, and how they are changing the way we communicate, share information, and connect with others. I enjoy participating in online communities and learning about the unique cultures, norms, and values that emerge within these spaces.
-                        </p>
-                        <p>
-                            I am inspired by the work of Jean Baudrillard and Mark Fisher, who were both cultural critics who explored the impact of technology on our culture and society. Baudrillard's concept of the "hyperreal" and Fisher's notion of "hauntology" have been particularly influential for me, as they provide a framework for understanding the ways in which technology can both enhance and distort our experiences of the world around us. These ideas connect with my interests in physical computing for art, cultural criticism, and online communities, as they offer a way to think about the complex relationship between technology, culture, and the self.
-                        </p>
-                    </section>
-                    <h2 class="section" id="contact">Contact Me!</h2>
-                    <section class="contact">
-                        <p>
-                            I am always interested in hearing about opportunities that align with my interests. My contact information can be found here:
-                        </p>
-                        <div class="separator"></div>
-                        <blockquote>
-                            <ul class="contact-list">
-                            <li>
-                                <a href="mailto:maha0767@colorado.edu">Send An Email</a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/mathieu-halpin-559774193/">LinkedIn</a>
-                            </li>
-                            </ul>
-                        </blockquote>
-                    </section>
-                </div>
+  <body>
+    <div class="aesthetic-effect-crt">
+      <div class="container">
+        <div class="layout">
+          <p class="col col-main"></p>
+          <aside class="window sidebar">
+            <div class="title-bar">
+              <button aria-label="Close" class="close"></button>
+              <h1 class="title">Navigation</h1>
             </div>
+            <div class="separator"></div>
+            <div class="window-pane">
+              <ul class="nav-items">
+                <li>
+                  <a href="#aboutme">About Me</a>
+                </li>
+                <li>
+                  <a href="#experience">Experience</a>
+                </li>
+                <li>
+                  <a href="#interests">Interests</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact me!</a>
+                </li>
+                <li>
+                  <a href="/mattpaint.html">MattPaint</a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <p></p>
+          <p class="col col-complementary" role="complementary"></p>
+          <div class="standard-dialog">
+            <p class="heading center">Mathieu Halpin</p>
+            <p class="desc center">Researcher | Designer | Thinker</p>
+            <h2 class="section" id="aboutme">About Me</h2>
+            <p>
+              My name is Mathieu Halpin and I am a senior at the University of
+              Colorado at Boulder, where I am studying Anthropology and minoring
+              in the Creative Technology and Design program. I am on track to
+              receive my BA in Anthropology in the coming months.
+            </p>
+            <p>
+              I am interested in researching cultural criticism and mass media,
+              and defining a creative practice with physical computing being my
+              medium. In my research, I want to explore the ways that mass media
+              influences our culture and the role that technology plays in
+              shaping our understanding of the world. I am particularly
+              interested in exploring the ways that physical computing can be
+              used to create new forms of expression and communication.
+            </p>
+            <p>
+              In my art, I strive to combine my passion for technology with my
+              interest in cultural criticism to create thought-provoking and
+              engaging works that challenge the viewer to think differently
+              about the world around them. Whether I am using hardware,
+              software, or a combination of both, my goal is to create art that
+              inspires, educates, and entertains.
+            </p>
+            <h2 class="section" id="experience">Current Experience</h2>
+            <section class="experience-list">
+              <h3 class="subtitles" id="thinglab">
+                Undergraduate Researcher, THING Lab
+              </h3>
+              <div style="padding-left: 20px">
+                <blockquote>
+                  Undergraduate researcher at the THING Lab within the ATLAS
+                  Institute. Supports the documentation and analysis of the
+                  TactorBots co-design study. Arranges the interview materials,
+                  identifies the inspiring finds, and provides reflections on
+                  the study results. Presents and discusses the findings with
+                  the research team. Supports the fabrication of the Shadow Lamp
+                  project for Arduino Cloud Game. Advisor: Dr. Daniel
+                  Leithinger, Mentor: Ran Zhou
+                </blockquote>
+              </div>
+              <h3 class="subtitles" id="fellowship">
+                Media Archiving and Preservation Fellow, University of Colorado
+                Libraries
+              </h3>
+              <div style="padding-left: 20px">
+                <blockquote>
+                  Learning from the Libraries’ Moving Image Archivist to review,
+                  identify, and describe 8mm, Super 8, 16mm, and 35mm film and
+                  various formats of video tape from the archives’ collections
+                  and to prepare media for digitization and/or long-term
+                  preservation. Handling moving image film and related
+                  equipment, identifying various film and video formats and
+                  characteristics, organizing and describing media material
+                  according to archival standards, and employing best practices
+                  for preservation of film and video materials.
+                </blockquote>
+              </div>
+              <h3 class="subtitles" id="cui">
+                Head Opinions Section Editor, CU Independent
+              </h3>
+              <div style="padding-left: 20px">
+                <blockquote>
+                  Oversee the editing and operations of the opinion's section
+                  alongside the Assistant Opinions Editor of the CU Independent,
+                  the University of Colorado's largest student-run publication.
+                </blockquote>
+              </div>
+            </section>
+            <h2 class="section">Past Experience</h2>
+            <section class="past-experience">
+              <h3 class="subtitles" id="wndr">Creative Intern, WNDR Museum</h3>
+              <div style="padding-left: 20px">
+                <blockquote>
+                  Supporting the museum's infrastructure, specifically looking
+                  into operational issues with technology. Assists in the
+                  installation of new exhibitions. Provides insight in weekly
+                  brainstorming meetings. Working with Arduino to create new
+                  insights on exhibitions.
+                </blockquote>
+              </div>
+              <h3 class="subtitles" id="cedar">
+                Research Intern, Community Engagement, Design, and Research
+                Center
+              </h3>
+              <div style="padding-left: 20px">
+                <blockquote>
+                  Assisted on the projects within the CEDaR Center, namely
+                  putting together a survey for residents of Longmont, CO in
+                  regards to their usage of the downtown area post-COVID-19.
+                  Contributed to general CEDaR tasks. Projects worked on: -
+                  Downtown Longmont Usage Survey
+                </blockquote>
+              </div>
+            </section>
+            <h2 class="section" id="interests">Interests</h2>
+            <section class="interests">
+              <p>
+                One of my main interests is physical computing for art, which
+                involves using technology to create interactive, physical
+                systems that can sense and respond to the world around them. I
+                find this field particularly fascinating because it allows
+                artists to explore the intersection of technology and the
+                physical world, and create new forms of expression that can
+                engage and inspire audiences.
+              </p>
+              <p>
+                Another area of interest for me is cultural criticism, which
+                involves analyzing and evaluating the various cultural phenomena
+                that shape our society. I find this field to be particularly
+                relevant in today's world, where technology is increasingly
+                shaping the way we think, act, and interact with each other.
+              </p>
+              <p>
+                I am also interested in online communities, and how they are
+                changing the way we communicate, share information, and connect
+                with others. I enjoy participating in online communities and
+                learning about the unique cultures, norms, and values that
+                emerge within these spaces.
+              </p>
+              <p>
+                I am inspired by the work of Jean Baudrillard and Mark Fisher,
+                who were both cultural critics who explored the impact of
+                technology on our culture and society. Baudrillard's concept of
+                the "hyperreal" and Fisher's notion of "hauntology" have been
+                particularly influential for me, as they provide a framework for
+                understanding the ways in which technology can both enhance and
+                distort our experiences of the world around us. These ideas
+                connect with my interests in physical computing for art,
+                cultural criticism, and online communities, as they offer a way
+                to think about the complex relationship between technology,
+                culture, and the self.
+              </p>
+            </section>
+            <h2 class="section" id="contact">Contact Me!</h2>
+            <section class="contact">
+              <p>
+                I am always interested in hearing about opportunities that align
+                with my interests. My contact information can be found here:
+              </p>
+              <div class="separator"></div>
+              <blockquote>
+                <ul class="contact-list">
+                  <li>
+                    <a href="mailto:maha0767@colorado.edu">Send An Email</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/mathieu-halpin-559774193/"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </blockquote>
+            </section>
+          </div>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
