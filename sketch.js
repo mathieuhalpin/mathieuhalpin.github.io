@@ -1,5 +1,5 @@
 // defines the size of the canvas
-const canvasWidth = 500;
+const canvasWidth = 750;
 const canvasHeight = 500;
 
 // defines the current drawing color
@@ -49,7 +49,7 @@ const sketch = (p) => {
       }
     } else if (currentTool === "marker") {
       // if the current tool is a marker, set the fill color to the current drawing color and draw a rectangle at the current mouse position with a size of 10x10 pixels
-      fill(currentColor);
+      p.fill(currentColor);
       if (p.mouseIsPressed) {
         p.circle(p.mouseX, p.mouseY, 10);
       }

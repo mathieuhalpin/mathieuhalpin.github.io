@@ -8,16 +8,21 @@
     />
     <title>mathieu halpin | researcher, designer, thinker.</title>
     <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/sakofchit/system.css/main/docs/docs.css">
     <!--CSS Library: System.css, https://sakofchit.github.io/system.css/#dialogs-->
     <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
     <style>
       .aesthetic-effect-crt {
         display: inline-block;
-        position: relative;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 8px;
+      width: 100%;
+      min-height: 100vh;
+      bottom: 0;
+      box-sizing: border-box;
       }
 
       .aesthetic-effect-crt::after {
@@ -57,11 +62,18 @@
         background-size: 100% 2px, 3px 100%;
         pointer-events: none;
       }
+      .body {
+        margin: 0;
+      }
+      .center {
+        text-align: center;
+    }
     </style>
     <!--credit to aesthetic.css for the better CRT effect: https://torch2424.github.io/aesthetic-css/-->
   </head>
 
   <body>
+    
     <div class="aesthetic-effect-crt">
       <div class="container">
         <aside class="sidenav">
