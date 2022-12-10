@@ -251,6 +251,7 @@
                 I do a lot of reading, mostly on the topics of culture, cybernetics, and philosophy. Here will include a list of books that I believe are the most important for someone to read along with PDFs of each book.
               </p>
               <ul class="book-list">
+                <!--Books from various educational material sites, namely Library Commons, Monoskop, Massachusetts Institute of Technology, and Communists In Situ-->
                 <li>
                   <a href="https://files.libcom.org/files/The%20Society%20of%20the%20Spectacle%20Annotated%20Edition.pdf"><i>The Society of The Spectacle</i> by Guy Debord</a>
                 </li>
@@ -293,6 +294,7 @@
           <footer>
             <div class="badges">
               <section class="badges">
+                <!--Badges all come from the 88x31 GIF collection: http://cyber.dabamos.de/88x31/index.html-->
                 <p style="text-align:center">
                   <a href="javascript:alert('i told you not to click here!')" target="blank">
                     <img src="/img/a (77).gif" title="don't click!">
@@ -320,9 +322,12 @@
         </div>
       </div>
       <div class="audio">
-        <audio controls autoplay>
-          <source src="/audio/ableton_keygen_music.mp3" type="audio/mp3">
-        </audio>
+        <!--Audio is Marble by Reactor Grits: https://modarchive.org/index.php?request=view_by_moduleid&query=49423-->
+        <audio id="bigtune" src="/audio/ableton_keygen_music.mp3" autoplay loop></audio>
+        <script>
+          var audio = document.getElementById('bigtune');
+          audio.volume = 0.6;
+        </script>
       </div>
     </div>
   </body>
