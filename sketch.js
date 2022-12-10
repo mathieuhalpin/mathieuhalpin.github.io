@@ -14,7 +14,7 @@ let prevY = 0;
 const sketch = (p) => {
   p.setup = () => {
     // creates the canvas
-    p.createCanvas(canvasWidth, canvasHeight);
+    const canvas = p.createCanvas(canvasWidth, canvasHeight);
     // sets the background color to white
     p.background(255);
 
