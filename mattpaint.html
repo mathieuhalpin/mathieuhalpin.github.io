@@ -123,8 +123,15 @@
       <div class="audio">
         <!--Audio is Marble by Reactor Grits: https://modarchive.org/index.php?request=view_by_moduleid&query=49423-->
         <audio id="bigtune" loop>
-          <source src="/audio/ableton_keygen_music.mp3" type="audio/meg">
+          <source src="/audio/ableton_keygen_music.mp3" type="audio/mpeg">
         </audio>
+        <script>
+          var audio = document.getElementById('bigtune');
+          var playAudio = confirm("This website features audio. Would you like to play the audio?");
+            if (playAudio) {
+              audio.play();
+            }
+        </script>
       </div>
     </div>
   </body>
