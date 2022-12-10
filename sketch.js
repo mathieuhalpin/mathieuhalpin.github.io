@@ -1,5 +1,5 @@
 // defines the size of the canvas
-const canvasWidth = 750;
+const canvasWidth = 1379;
 const canvasHeight = 500;
 
 // defines the current drawing color
@@ -35,7 +35,7 @@ const sketch = (p) => {
 
     // creates a save button
     const saveButton = p.createButton("Save");
-    saveButton.mousePressed(() => saveCanvas(canvas));
+    saveButton.mousePressed(() => p.saveCanvas(canvas));
   };
 
   p.draw = () => {
